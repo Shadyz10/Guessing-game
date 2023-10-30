@@ -57,10 +57,13 @@ btnStart.addEventListener('click', function (){
     // console.log(maxValue)
     
     // Если Максимальное значение окажется меньше Минимального
-
+    if (Number.isNaN(minValue) || Number.isNaN(maxValue)){
+        minValue = 0;
+        maxValue = 100;
+    }
     if (minValue > maxValue) {
 		[minValue, maxValue] = [maxValue, minValue];
-	};
+	}
 
     let answerNumber  = Math.floor((minValue + maxValue) / 2);
 
