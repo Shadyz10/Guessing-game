@@ -64,7 +64,7 @@ btnStart.addEventListener('click', function (){
 
     let answerNumber  = Math.floor((minValue + maxValue) / 2);
 
-    answerField.innerText = answerNumber >= 0 ? numberToWords(answerNumber).length < 20 && answerNumber >= 0 ? `Вы загадали число ${numberToWords(answerNumber)}?` : `Вы загадали число ${answerNumber}?` : numberToWords(answerNumber).length < 20 ? `Вы загадали число минус ${numberToWords(answerNumber)}?` : `Вы загадали число минус  ${Math.abs(answerNumber)}?`;
+    answerField.innerText = answerNumber >= 0 ? numberToWords(answerNumber).length < 20 && answerNumber >= 0 ? `Вы загадали число ${numberToWords(answerNumber)}?` : `Вы загадали число ${answerNumber}?` : numberToWords(answerNumber).length < 20 ? `Вы загадали число ${numberToWords(answerNumber)}?` : `Вы загадали число минус  ${Math.abs(answerNumber)}?`;
     
 
 // Кнопка Заново
